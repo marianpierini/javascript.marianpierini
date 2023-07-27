@@ -1,0 +1,56 @@
+header {background-color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    .logo { 
+        width: 9rem;
+       margin: 10px 0px 5px 0px ;
+        }
+   }
+
+   .navbar ul {
+    background-color: black;
+    a {padding: 5px;
+    border:solid white;
+    color: white;}
+}
+
+
+.navbar-brand {
+    font-weight: lighter;
+    font-size: unset;
+    margin: 10px;
+    color: white;
+    padding: 5px;
+    border: solid white;
+    transition: .5s;
+    &:hover {
+        background-color: white;
+        color: black;}}
+
+
+.nav-item a {
+    color: white;  
+    margin: 10px;
+    text-align: center;
+    transition: .5s;
+    &:hover {background-color: white;
+    color: black;}}
+
+.show {color: black;
+background-color: white;}
+
+.dropdown-menu li {max-width: 18rem;
+text-align: center;}
+
+
+@media (min-width:992px) {
+    .dropdown-menu li {max-width: 9rem;}
+}
+
+.dropdown-item {
+    margin: 0;
+}
+
+span {border: solid white;
+background-color: white;}

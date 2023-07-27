@@ -12,7 +12,7 @@ class Producto {
  
     codDescuento () {
         this.desc = prompt ("tienes un codigo de descuento?")
-        if (this.desc == "si" || this.desc == "Si" || this.desc == "SI") {
+        if (this.desc.toLowerCase() == "si" ) {
          let codigo = "boca"
          do {
         codigo = prompt ("Ingrese codigo de descuento")
@@ -60,5 +60,26 @@ class Producto {
 
             }
 
-const producto = new Producto (prompt ("Ingrese producto"), prompt ("Ingrese precio"), prompt ("Ingrese cantidad"))
+            const productos = []
 
+            let agregarProductos = "si"
+            
+            while (agregarProductos) {
+                const nombre = prompt("Ingrese producto")
+                const precio = prompt("Ingrese precio")
+                const cantidad = prompt("Ingrese cantidad")
+            
+                const producto = new Producto(nombre, precio, cantidad)
+                productos.push(producto)
+            
+                agregarProductos = prompt("¿Deseas agregar otro producto? (si/no)") == "si"
+            }
+
+            for (const producto of productos) {
+                producto.codDescuento()
+                producto.formaDePago()
+            }
+
+            const baratos = productos.filter(producto => producto.precio <300)
+            const oferta = productos.filter (producto=> producto.desc == "si") 
+    

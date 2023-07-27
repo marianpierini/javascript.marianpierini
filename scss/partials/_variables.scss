@@ -1,0 +1,15 @@
+
+@mixin caja-desarrollo {
+    background-color: $color-principal;
+    max-width: 100%;
+    border: double white;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@mixin portadas {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center ;
+}

@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: linear-gradient(to left, #adb5bd, #F5F5E5, #adb5bd);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 18px;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+footer {
+  color: white;
+  background-color: black;
+  padding: 5px;
+}
+
+.barra {
+  border-bottom: solid #ffc107 0.8rem;
+  max-width: 30rem;
+  margin: 0 auto;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+header .logo {
+  width: 9rem;
+  margin: 10px 0px 5px 0px;
+}
+
+.navbar ul {
+  background-color: black;
+}
+.navbar ul a {
+  padding: 5px;
+  border: solid white;
+  color: white;
+}
+
+.navbar-brand {
+  font-weight: lighter;
+  font-size: unset;
+  margin: 10px;
+  color: white;
+  padding: 5px;
+  border: solid white;
+  transition: 0.5s;
+}
+.navbar-brand:hover {
+  background-color: white;
+  color: black;
+}
+
+.nav-item a {
+  color: white;
+  margin: 10px;
+  text-align: center;
+  transition: 0.5s;
+}
+.nav-item a:hover {
+  background-color: white;
+  color: black;
+}
+
+.show {
+  color: black;
+  background-color: white;
+}
+
+.dropdown-menu li {
+  max-width: 18rem;
+  text-align: center;
+}
+
+@media (min-width: 992px) {
+  .dropdown-menu li {
+    max-width: 9rem;
+  }
+}
+.dropdown-item {
+  margin: 0;
+}
+
+span {
+  border: solid white;
+  background-color: white;
+}
+
+.footerpadre {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footerpadre .footerhijo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: flex-start;
+}
+@media (min-width: 768px) {
+  .footerpadre .footerhijo {
+    justify-content: center;
+  }
+}
+.footerpadre .footerhijo .redes {
+  width: 20px;
+  height: 20px;
+}
+
+.whatsapp {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+  .whatsapp {
+    position: fixed;
+    bottom: 60px;
+    right: 50px;
+    z-index: 100;
+    transition: 1.2s;
+  }
+  .whatsapp:hover {
+    transform: scale(1.4);
+  }
+}
+@media (min-width: 998px) {
+  .whatsapp {
+    position: fixed;
+    height: 50px;
+    width: 50px;
+    bottom: 60px;
+    right: 30px;
+    z-index: 100;
+    transition: 1.2s;
+  }
+  .whatsapp:hover {
+    transform: scale(1.4);
+  }
+}
+.row {
+  margin: auto;
+}
+
+.grid-seccion {
+  background-image: linear-gradient(to right, #000, #F5F5E5);
+}
+
+/*# sourceMappingURL=styles.css.map */
