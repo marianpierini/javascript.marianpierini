@@ -49,44 +49,75 @@
                 </div>
               </div>
             </nav>
-       
+       <div class="iconoCarrito fs-2 mb-3 ">
+        <svg class=" compraCarrito text-white" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-bag" viewBox="0 0 16 16">
+          <path class="compraCarrito" d="M8 1a2.5 2.5 0 0 1 2.5 2.5V4h-5v-.5A2.5 2.5 0 0 1 8 1zm3.5 3v-.5a3.5 3.5 0 1 0-7 0V4H1v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V4h-3.5zM2 5h12v9a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V5z"/>
+        </svg>
+        <div class="contador">
+          <span id="contadorCarrito">0</span>
+        </div>
+        <div class="contenidoCarrito ocultarCarrito">
+          <div class="contenedorProductoComprado">
+           <div class="productoComprado">
+            <div class="descripcionProducto">
+              <span class="cantidadProducto"></span>
+              <p class="infoProducto">El Carrito está vacío</p>
+              <span class="precioProductoCarrito"></span>
+
+            </div>
+            <svg class="bg-white cerrarIcono" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x" viewBox="0 0 16 16">
+              <path class="cerrarIcono" d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+            </svg>
+          </div> 
+          </div>
+          
+          <div class="totalPagar">
+            <h4>Total: $</h4>
+            <span class="precioTotalPagar">$0</span>
+            <a href="./pagar.html">
+              <button type="button" class="btn btn-outline-warning" >Pagar</button>
+              </a>
+          </div>
+        </div>
+       </div>
      </header>
      <main>
+      <div class="productosSeleccionados">
         <div class="container text-center row row-cols-1 row-cols-md-3 g-4 ">
             <div class="col">
               <div class="card h-100 border-warning border-3">
                 <img src="../img/camiseta boca.jpg" class=" card-img-top" alt="...">
-                <div class="card-body  ">
+                <div class="card-body text-white border-warning border-3 bg-black ">
                   <h5 class="card-title"><strong>Camiseta Boca Juniors 2022/23</strong></h5>
-                  <p class="card-text">Inspirada en un modelo icónico de principios de los 90 con su cuello distintivo y la franja cosida en el pecho.</p>
-                </div>
-                <div class="card-footer border-warning border-3 bg-warning ">
-                  <small class="text-body-secondary ">Nuevo producto</small>
-                </div>
+                  <p class="card-text">Equipación titular del club de la Ribera para la temporada 22/23.</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$25000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
               </div>
             </div>
             <div class="col">
               <div class="card h-100 border-warning border-3">
                 <img src="../img/camiseta boca supl.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body text-white border-warning border-3 bg-black ">
                   <h5 class="card-title"><strong>Camiseta Boca Juniors Suplente 2022/23</strong></h5>
-                  <p class="card-text">Camiseta suplente del conjunto "Xeneise" para la temporada 22/23.</p>
-                </div>
-                <div class="card-footer border-warning border-3 bg-warning">
-                  <small class="text-body-secondary">Nuevo Ingreso</small>
-                </div>
+                  <p class="card-text">Camiseta suplente del conjunto "Xeneise" para la temporada 22/23</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$25000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
               </div>
             </div>
             <div class="col ">
               <div class="card h-100 border-warning border-3">
                 <img src="../img/camiseta atl nacional.jpg" class=" card-img-top " alt="...">
-                <div class="card-body  ">
-                  <h5 class="card-title "> <strong>Camiseta Atletico Nacional 2022/23</strong>  </h5>
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Camiseta Atletico Nacional 2022/23</strong></h5>
                   <p class="card-text">Camiseta titular del conjunto "Paisa" para la temporada 22/23</p>
-                </div>
-                <div class="card-footer border-warning border-3 bg-warning">
-                  <small class="text-body-secondary">Ultimas Unidades!</small>
-                </div>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$18000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
               </div>
             </div>
           </div>
@@ -94,37 +125,37 @@
             <div class="col">
               <div class="card h-100 border-warning border-3">
                 <img src="../img/camiseta estudiantes.jpg" class=" card-img-top" alt="...">
-                <div class="card-body  ">
+                <div class="card-body text-white border-warning border-3 bg-black ">
                   <h5 class="card-title"><strong>Camiseta Estudiantes LP 2022/23</strong></h5>
                   <p class="card-text">Indumentaria titular del "Pincha" para la temporada 22/23</p>
-                </div>
-                <div class="card-footer border-warning border-3 bg-warning ">
-                  <small class="text-body-secondary ">Nuevo producto</small>
-                </div>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$18000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
               </div>
             </div>
             <div class="col">
               <div class="card h-100 border-warning border-3">
                 <img src="../img/camiseta flamengo.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body text-white border-warning border-3 bg-black ">
                   <h5 class="card-title"><strong>Camiseta Flamengo 2023/24</strong></h5>
                   <p class="card-text">Equipacion titular del "Mengao" para la temporada 23/24</p>
-                </div>
-                <div class="card-footer border-warning border-3 bg-warning">
-                  <small class="text-body-secondary">Nuevo Ingreso</small>
-                </div>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$25000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
               </div>
             </div>
             <div class="col ">
               <div class="card h-100 border-warning border-3">
                 <img src="../img/camiseta palmeiras supl.jpg" class=" card-img-top " alt="...">
-                <div class="card-body  ">
-                  <h5 class="card-title "> <strong>Camiseta Suplente Palmeiras 2023/24</strong>  </h5>
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Camiseta Suplente Palmeiras 2023/24</strong></h5>
                   <p class="card-text">Camiseta alternativa del "Verdao" para la temporada 23/24</p>
-                </div>
-                <div class="card-footer border-warning border-3 bg-warning">
-                  <small class="text-body-secondary">Ultimas Unidades!</small>
-                </div>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$25000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
               </div>
             </div>
           </div>
@@ -132,40 +163,153 @@
             <div class="col">
               <div class="card h-100 border-warning border-3">
                 <img src="../img/camiseta palmeiras.jpg" class=" card-img-top" alt="...">
-                <div class="card-body  ">
-                  <h5 class="card-title"><strong>Camiseta Palmeiras 2023/24"</strong></h5>
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Camiseta Palmeiras 2023/24</strong></h5>
                   <p class="card-text">Equipacion titular del equipo paulista para la temporada 23/24</p>
-                </div>
-                <div class="card-footer border-warning border-3 bg-warning ">
-                  <small class="text-body-secondary ">Nuevo producto</small>
-                </div>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$26000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
               </div>
             </div>
             <div class="col">
               <div class="card h-100 border-warning border-3">
                 <img src="../img/camiseta racing.jpg" class="card-img-top" alt="...">
-                <div class="card-body">
+                <div class="card-body text-white border-warning border-3 bg-black ">
                   <h5 class="card-title"><strong>Camiseta Racing Club 2022/23</strong></h5>
                   <p class="card-text">Camiseta titular de la "Academia" para la temporada 22/23</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$20000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-warning border-3">
+                <img src="../img/camiseta river.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Camiseta River Plate 2022/23</strong></h5>
+                  <p class="card-text">Conjunto titular del "Millonario" para la temporada 22/23</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$25000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
                 </div>
-                <div class="card-footer border-warning border-3 bg-warning">
-                  <small class="text-body-secondary">Nuevo Ingreso</small>
-                </div>
+            </div>
+          </div>
+          <div class="container text-center row row-cols-1 row-cols-md-3 g-4 ">
+            <div class="col">
+              <div class="card h-100 border-warning border-3">
+                <img src="../img/short boca.jpg" class=" card-img-top" alt="...">
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Short Boca Juniors 2022/23</strong></h5>
+                  <p class="card-text">Short titular del conjunto azul y oro para la temporada 22/23</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$12000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-warning border-3">
+                <img src="../img/short boca supl.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Short Boca Jrs Suplente 2022/23</strong></h5>
+                  <p class="card-text">Short suplente del conjunto "Xeneize" para la temporada 22/23</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$12000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
               </div>
             </div>
             <div class="col ">
               <div class="card h-100 border-warning border-3">
-                <img src="../img/camiseta river.jpg" class=" card-img-top " alt="...">
-                <div class="card-body  ">
-                  <h5 class="card-title "> <strong>Camiseta River Plate 2022/23</strong>  </h5>
-                  <p class="card-text">Conjunto titular del "Millonario" para la temporada 22/23</p>
-                </div>
-                <div class="card-footer border-warning border-3 bg-warning">
-                  <small class="text-body-secondary">Ultimas Unidades!</small>
-                </div>
+                <img src="../img/short corinthians.jpg" class=" card-img-top " alt="...">
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Short Corinthians 2022/23</strong></h5>
+                  <p class="card-text">Short titular del "Timao" para la temporada 22/23</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$10000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
               </div>
             </div>
           </div>
+          <div class="container text-center row row-cols-1 row-cols-md-3 g-4 ">
+            <div class="col">
+              <div class="card h-100 border-warning border-3">
+                <img src="../img/short fluminense.jpg" class=" card-img-top" alt="...">
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Short Fluminense 2022/23</strong></h5>
+                  <p class="card-text">Short titular del "Flu" para la temporada 22/23</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$10000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-warning border-3">
+                <img src="../img/short independiente.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Short Independiente 2022/23</strong></h5>
+                  <p class="card-text">Short titular para "El Rojo" para la temporada 22/23</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$8000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
+              </div>
+            </div>
+            <div class="col ">
+              <div class="card h-100 border-warning border-3">
+                <img src="../img/short palmeiras.jpg" class=" card-img-top " alt="...">
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Short Palmeiras 2022/23</strong></h5>
+                  <p class="card-text">hort titular del "Verdao" para la temporada 22/23</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$15000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
+              </div>
+            </div>
+          </div>
+          <div class="container text-center row row-cols-1 row-cols-md-3 g-4 mb-4">
+            <div class="col">
+              <div class="card h-100 border-warning border-3">
+                <img src="../img/short san lorenzo supl.jpg" class=" card-img-top" alt="...">
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Short suplente San Lorenzo 2022/23</strong></h5>
+                  <p class="card-text">Short alternativo del "Ciclon" para la temporada 22/23</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$9000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
+              </div>
+            </div>
+            <div class="col">
+              <div class="card h-100 border-warning border-3">
+                <img src="../img/short river supl.jpg" class="card-img-top" alt="...">
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Short Suplente River Plate 2022/23</strong></h5>
+                  <p class="card-text">Short alternativo de River Plate para la temporada 22/23</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$12000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
+              </div>
+            </div>
+            <div class="col ">
+              <div class="card h-100 border-warning border-3">
+                <img src="../img/short river.jpg" class=" card-img-top " alt="...">
+                <div class="card-body text-white border-warning border-3 bg-black ">
+                  <h5 class="card-title"><strong>Short River Plate 2022/23</strong></h5>
+                  <p class="card-text">Short titular del "Millonario" para la temporada 22/23</p>
+                    <span class="bg-warning border-warning text-center text-dark "><strong>$12000</strong></span>
+                    <button type="button" class="precio btn btn-outline-warning">Comprar</button>
+                  </div>  
+                
+              </div>
+            </div>
+          </div>
+      </div>
 
           
 
@@ -203,7 +347,7 @@
       <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script>      AOS.init();    </script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-      
+      <script src="../sudaca.js" ></script>
     </body>
 </html>
     

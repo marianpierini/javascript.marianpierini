@@ -25,3 +25,94 @@ body {background-image: linear-gradient(to left, #adb5bd, #F5F5E5,#adb5bd );
     max-width: 30rem;
     margin: 0 auto ;
   }
+.iconoCarrito {
+  position: relative;
+  
+  }
+
+.compraCarrito:hover {
+  cursor: pointer;
+}
+  .contador {
+    position: absolute;
+    font-size: 15px;
+    top: 80%;
+    right: 0;
+    width: 5px;
+    height: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+  }
+
+.contenidoCarrito{
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background-color: #F5F5E5;
+  border: solid #ffc107 ;
+  width: 500px;
+  z-index: 1;
+  align-items: center;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.20,);
+  border-radius: 5px;
+}
+
+.productoComprado {
+  display: flex;
+  padding: 30px;
+  justify-content: space-between;
+  border-bottom: solid  #adb5bd;
+}
+
+.descripcionProducto {
+  display: flex;
+  justify-content: space-between;
+  flex: 0.8;
+}
+
+.cantidadProducto{
+font-size: 20px;
+font-weight: 400;
+background-color: none;
+
+}
+.cerrarIcono:hover {
+  cursor: pointer;
+}
+
+.infoProducto{
+  font-size: 20px;
+}
+
+.precioProductoCarrito {
+  font-weight: 700;
+  font-size: 20px;
+  margin-left: 10px;
+  background-color: none;
+}
+
+.totalPagar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  h4 {
+  font-size: 20px;
+  font-weight: 700;
+}}
+
+.precioTotalPagar {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.ocultarCarrito {
+  display: none;
+}
+
+.cuotasOcultas {
+  display: none;
+}
