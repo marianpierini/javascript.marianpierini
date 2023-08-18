@@ -5,6 +5,7 @@ botonCarrito.addEventListener("click", ()=> {
     mostrarCarrito.classList.toggle("ocultarCarrito")
 })
 
+
 const productoComprado = document.querySelector(".productoComprado")
 const contenedorProductoComprado = document.querySelector(".contenedorProductoComprado")
 const productosSeleccionados = document.querySelector(".productosSeleccionados")
@@ -21,6 +22,8 @@ const cuotasOcultas = document.querySelector(".cuotasOcultas")
 const cuota3 = document.getElementById ("cuota3")
 const cuota6 = document.getElementById ("cuota6")
 const cuota12 = document.getElementById ("cuota12")
+const pagoFinal = document.getElementById("pagoFinal")
+
 
 
 productosSeleccionados.addEventListener ("click", e => {
@@ -42,6 +45,18 @@ if (e.target.classList.contains ("precio")) {
 } else {
     compraProductos.push(infoProducto)
 }
+Toastify({
+
+    text: "Producto agregado",
+    duration: 2000,
+    style: {
+        background: "linear-gradient( #1A1D20, black)",
+        border: " solid #ffc107 ",
+        color: "white"
+    }
+    
+    })
+  .showToast();
   mostrarCompraCarrito()
   actualizarCarrito ()
   agregarTotal()
@@ -114,6 +129,7 @@ descuento.addEventListener("click", agregarDescuento)
 function agregarDescuento(e) {
     e.preventDefault()
     descuento.children[0].value != "boca" ? mensaje.innerText = `${""}` : mensaje.innerText = `Tu precio ahora es de: $ ${total.innerText * 0.8 }` 
+    descuento.children[0].value =""
     }
 
 efectivo.addEventListener("click", pagoEfectivo)
@@ -137,3 +153,23 @@ function calculoCuotas6 () {
 function calculoCuotas12 () {
     descuento.children[0].value != "boca" ? mensajePago.innerText = `Tienes que pagar 12 cuotas de $ ${total.innerText / 12}` :  mensajePago.innerText = `Tienes que pagar 12 cuotas de $ ${(total.innerText * 0.8) / 12}`
 }
+
+
+pagoFinal.addEventListener("click", finCompra)
+function finCompra() {
+    Swal.fire({
+        icon: 'success',
+        title: 'Compra exitosa',
+        text: 'Muchas gracias por confiar en MDQ Tienda Deportiva',
+        timer: 2000,
+        
+      })
+      compraProductos = []
+      mostrarCompraCarrito()
+      actualizarCarrito()
+
+      setTimeout(() => {
+        window.location.href = "../index.html";
+      }, 2500);
+}
+
