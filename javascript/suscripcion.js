@@ -15,3 +15,4 @@ function newsletter () {
     }
     email.value =""  
 }
+

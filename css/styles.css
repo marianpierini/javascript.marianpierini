@@ -168,10 +168,6 @@ header .logo {
   text-align: center;
   transition: 0.5s;
 }
-.nav-item a:hover {
-  background-color: white;
-  color: black;
-}
 
 .show {
   color: black;
@@ -195,6 +191,14 @@ header .logo {
 span {
   border: solid white;
   background-color: white;
+}
+
+.estadisticas {
+  font-size: larger;
+}
+
+.numeros {
+  font-size: 40px;
 }
 
 .footerpadre {

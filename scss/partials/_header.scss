@@ -34,8 +34,7 @@ header {background-color: black;
     margin: 10px;
     text-align: center;
     transition: .5s;
-    &:hover {background-color: white;
-    color: black;}}
+     }
 
 .show {color: black;
 background-color: white;}
@@ -54,3 +53,11 @@ text-align: center;}
 
 span {border: solid white;
 background-color: white;}
+
+.estadisticas {
+    font-size: larger;
+}
+
+.numeros{
+    font-size: 40px;
+}

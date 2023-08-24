@@ -24,16 +24,22 @@ const cuota6 = document.getElementById ("cuota6")
 const cuota12 = document.getElementById ("cuota12")
 const pagoFinal = document.getElementById("pagoFinal")
 
-
+class Producto {
+    constructor(quantity, producto, precio) {
+        this.quantity = quantity;
+        this.producto = producto;
+        this.precio = precio;
+    }
+}
 
 productosSeleccionados.addEventListener ("click", e => {
 if (e.target.classList.contains ("precio")) {
     const producto = e.target.parentElement
-    const infoProducto = {
-        quantity: 1,
-        producto: producto.querySelector("h5").innerText,
-        precio: producto.querySelector("span").innerText
-    } 
+    const infoProducto = new Producto (
+        1,
+        producto.querySelector("h5").innerText,
+        producto.querySelector("span").innerText
+    )
 
     const productoRepetido = compraProductos.some(producto => producto.producto === infoProducto.producto)
 
@@ -129,7 +135,7 @@ descuento.addEventListener("click", agregarDescuento)
 function agregarDescuento(e) {
     e.preventDefault()
     descuento.children[0].value != "boca" ? mensaje.innerText = `${""}` : mensaje.innerText = `Tu precio ahora es de: $ ${total.innerText * 0.8 }` 
-    descuento.children[0].value =""
+    
     }
 
 efectivo.addEventListener("click", pagoEfectivo)
@@ -139,7 +145,8 @@ cuota6.addEventListener("click", calculoCuotas6)
 cuota12.addEventListener("click", calculoCuotas12)
 
 function pagoEfectivo () {
-    descuento.children[0].value != "boca" ? mensajePago.innerText = `Tienes que pagar $ ${total.innerText}` : mensajePago.innerText = `Tienes que pagar $ ${total.innerText * 0.8}`
+    descuento.children[0].value != "boca" ? mensajePago.innerText = `Tienes que pagar $ ${total.innerText}` : mensajePago.innerText = `Tienes que pagar $ ${total.innerText * 0.8}`;
+    
 }
 function pagoTarjeta () {
     cuotasOcultas.classList.toggle("cuotasOcultas")
